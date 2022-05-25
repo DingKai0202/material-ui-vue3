@@ -4,6 +4,7 @@ import path from 'path'
 // import commonjs from '@rollup/plugin-commonjs'
 import { terser } from 'rollup-plugin-terser'
 import typescript from 'rollup-plugin-typescript2'
+import scss from 'rollup-plugin-scss'
 import css from 'rollup-plugin-css-only'
 import pkg from '../package.json'
 const deps = Object.keys(pkg.dependencies)
@@ -28,6 +29,7 @@ export default [
         css: false,
         exposeFilename: false,
       }),
+      scss(),
       typescript({
         tsconfigOverride: {
           compilerOptions: {

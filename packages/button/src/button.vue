@@ -1,7 +1,10 @@
 
 <template>
   <button class="mui-btn">
-    <span v-if="$slots.default"><slot></slot></span>
+    <span v-if="$slots.default">
+      <slot></slot>
+    </span>
+    <div class="btn-loading">loading...</div>
   </button>
 </template>
  
@@ -12,10 +15,12 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .mui-btn {
   background: #409eff;
   border-radius: 4px;
-  color: #fff;
+  .btn-loading{
+    color: #ccc;
+  }
 }
 </style>

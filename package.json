@@ -1,6 +1,6 @@
 {
-  "name": "materail-ui-vue3",
-  "version": "0.1.1",
+  "name": "material-ui-vue3",
+  "version": "0.1.2",
   "private": false,
   "description": "基于vue3+ts的material风格前端组件库",
   "main": "lib/index.min.js",
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "node-sass": "^7.0.1",
     "vue": "^3.0.0"
   },
   "devDependencies": {
@@ -40,6 +41,7 @@
     "eslint-plugin-vue": "^7.0.0",
     "rollup": "^2.58.0",
     "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-scss": "^2.6.1",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-vue": "^6.0.0",

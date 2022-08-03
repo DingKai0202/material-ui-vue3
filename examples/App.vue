@@ -4,6 +4,7 @@
   <mui-button variant="text" :color="textColor" @click="handleClick">按钮</mui-button>
   <mui-button variant="contained" @click="handleClick">按钮</mui-button>
   <mui-button variant="lined" @click="handleClick">按钮</mui-button>
+  <mui-dialog>弹窗</mui-dialog>
 </template>
 
 <script lang="ts" setup>

@@ -1,5 +1,44 @@
 .mui-btn[data-v-ca859fb4] {
-  background: #409eff;
+  /* background: #409eff; */
   border-radius: 4px; }
   .mui-btn[data-v-ca859fb4] .btn-loading[data-v-ca859fb4] {
     color: #ccc; }
+
+.btn-type-text[data-v-ca859fb4] {
+  background: none;
+  border: none;
+  padding: 6px 8px; }
+  .btn-type-text[data-v-ca859fb4] span[data-v-ca859fb4] {
+    color: #90caf9; }
+  .btn-type-text[data-v-ca859fb4][data-v-ca859fb4]:hover {
+    background: #409eff;
+    cursor: pointer;
+    transition: all linear .3s; }
+    .btn-type-text[data-v-ca859fb4][data-v-ca859fb4]:hover span[data-v-ca859fb4] {
+      color: #fff; }
+
+.btn-type-contained[data-v-ca859fb4] {
+  background: #90caf9;
+  border: none;
+  padding: 6px 8px; }
+  .btn-type-contained[data-v-ca859fb4] span[data-v-ca859fb4] {
+    color: #fff; }
+  .btn-type-contained[data-v-ca859fb4][data-v-ca859fb4]:hover {
+    background: #409eff;
+    cursor: pointer;
+    transition: all linear .3s; }
+
+.btn-type-lined[data-v-ca859fb4] {
+  padding: 6px 8px;
+  border: 1px solid #90caf980;
+  background: none;
+  color: red; }
+  .btn-type-lined[data-v-ca859fb4] span[data-v-ca859fb4] {
+    color: #90caf9; }
+  .btn-type-lined[data-v-ca859fb4][data-v-ca859fb4]:hover {
+    background: #409eff;
+    cursor: pointer;
+    transition: all linear .3s;
+    border: 1px solid #fff; }
+    .btn-type-lined[data-v-ca859fb4][data-v-ca859fb4]:hover span[data-v-ca859fb4] {
+      color: #fff; }

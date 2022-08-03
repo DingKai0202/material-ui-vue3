@@ -1,8 +1,9 @@
 import { App } from 'vue'
 import MuiButton from './button'
+import MuiDialog from './dialog'
  
 // 所有组件列表
-const components = [ MuiButton ]
+const components = [ MuiButton, MuiDialog ]
  
 // 定义 install 方法， App 作为参数
 const install = (app: App): void => {
@@ -11,7 +12,8 @@ const install = (app: App): void => {
 }
  
 export {
-  MuiButton
+  MuiButton,
+  MuiDialog
 }
  
 export default {

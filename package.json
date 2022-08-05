@@ -1,6 +1,6 @@
 {
   "name": "material-ui-vue3",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "description": "基于vue3+ts的material风格前端组件库",
   "main": "lib/index.min.js",

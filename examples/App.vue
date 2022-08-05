@@ -3,8 +3,12 @@
   <div>{{ count }}</div>
   <mui-button variant="text" :color="textColor" @click="handleClick">按钮</mui-button>
   <mui-button variant="contained" @click="handleClick">按钮</mui-button>
-  <mui-button variant="lined" @click="handleClick">按钮</mui-button>
-  <mui-dialog>弹窗</mui-dialog>
+  <mui-button variant="lined" @click="openDialog">按钮</mui-button>
+  <mui-dialog v-model="dialogVisible">
+    <h1>标题</h1>
+    <p style="background: white">内容是付费电视</p>
+    <span>弄啊萨芬</span>
+  </mui-dialog>
 </template>
 
 <script lang="ts" setup>
@@ -12,6 +16,7 @@ import { ref } from 'vue'
 // name: 'App',
 let count = ref<number>(0)
 let textColor = ref<string>('red')
+const dialogVisible = ref<boolean>(false)
   
 const handleClick = () => {
   count.value++
@@ -19,6 +24,11 @@ const handleClick = () => {
     textColor.value = 'green'
   }
 }
+
+const openDialog = () => {
+  dialogVisible.value = true
+}
+
 </script>
 
 <style lang="scss">

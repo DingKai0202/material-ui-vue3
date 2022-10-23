@@ -7,10 +7,15 @@ export function useButtonStyles(props: ButtonProps) {
   return computed(() => {
     let styles: Record<string, string> = {}
 
-    const buttonColor = props.color
+    let buttonColor
+    if (props.color !== 'secondary' || '') {
+      buttonColor = '#9c27b0'
+    } else {
+      buttonColor = props.color || ''
+    }
 
     styles = {
-      "color": buttonColor || 'black'
+      color: buttonColor
     }
 
     return styles

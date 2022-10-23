@@ -1,14 +1,19 @@
 <template>
   <div>组件示例</div>
   <div>{{ count }}</div>
+  <mui-button>默认</mui-button>
   <mui-button variant="text" :color="textColor" @click="handleClick">按钮</mui-button>
   <mui-button variant="contained" @click="handleClick">按钮</mui-button>
   <mui-button variant="lined" @click="openDialog">按钮</mui-button>
+  <mui-button disabled @click="openDialog">按钮</mui-button>
+  <mui-button variant="lined" @click="clickButton">点击事件</mui-button>
+  <mui-button color="secondary">点击事件</mui-button>
   <mui-dialog v-model="dialogVisible">
     <h1>标题</h1>
     <p style="background: white">内容是付费电视</p>
     <span>弄啊萨芬</span>
   </mui-dialog>
+  <mui-icon>Icon组件</mui-icon>
 </template>
 
 <script lang="ts" setup>
@@ -29,6 +34,10 @@ const openDialog = () => {
   dialogVisible.value = true
 }
 
+const clickButton = () => {
+  console.log('点击按钮');
+}
+
 </script>
 
 <style lang="scss">
@@ -36,9 +45,8 @@ const openDialog = () => {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  /* background: #2c3e50; */
+  /* background: rgb(0, 30, 60); */
 }
 </style>

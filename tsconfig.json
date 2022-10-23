@@ -12,7 +12,8 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env"
+      "unplugin-vue-define-options/macros-global",
+      "webpack-env",
     ],
     "paths": {
       "~/*": [

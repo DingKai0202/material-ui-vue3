@@ -13,7 +13,7 @@
     <p style="background: white">内容是付费电视</p>
     <span>弄啊萨芬</span>
   </mui-dialog>
-  <mui-icon>Icon组件</mui-icon>
+  <mui-icon color="red">Icon组件</mui-icon>
 </template>
 
 <script lang="ts" setup>

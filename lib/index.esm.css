@@ -13,9 +13,17 @@
   .btn-type-text[data-v-ca859fb4][data-v-ca859fb4]:hover {
     background: #409eff;
     cursor: pointer;
-    transition: all linear .3s; }
+    transition: all linear .2s; }
     .btn-type-text[data-v-ca859fb4][data-v-ca859fb4]:hover span[data-v-ca859fb4] {
       color: #fff; }
+
+.btn-disabled[data-v-ca859fb4] {
+  border: none;
+  color: rgba(0, 0, 0, 0.26);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12); }
+  .btn-disabled[data-v-ca859fb4][data-v-ca859fb4]:hover {
+    cursor: not-allowed; }
 
 .btn-type-contained[data-v-ca859fb4] {
   background: #90caf9;
@@ -26,19 +34,31 @@
   .btn-type-contained[data-v-ca859fb4][data-v-ca859fb4]:hover {
     background: #409eff;
     cursor: pointer;
-    transition: all linear .3s; }
+    transition: all linear .2s; }
+    .btn-type-contained[data-v-ca859fb4][data-v-ca859fb4]:hover span[data-v-ca859fb4] {
+      color: #fff; }
 
 .btn-type-lined[data-v-ca859fb4] {
   padding: 6px 8px;
   border: 1px solid #90caf980;
-  background: none;
-  color: red; }
+  background: none; }
   .btn-type-lined[data-v-ca859fb4] span[data-v-ca859fb4] {
     color: #90caf9; }
   .btn-type-lined[data-v-ca859fb4][data-v-ca859fb4]:hover {
     background: #409eff;
     cursor: pointer;
-    transition: all linear .3s;
+    transition: all linear .2s;
     border: 1px solid #fff; }
     .btn-type-lined[data-v-ca859fb4][data-v-ca859fb4]:hover span[data-v-ca859fb4] {
       color: #fff; }
+
+.mui-overlay[data-v-01262052] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto; }

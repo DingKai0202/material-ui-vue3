@@ -21,7 +21,7 @@ export default defineComponent({
 </script>
 <script lang="ts" setup>
 import { reactive, ref, defineProps, defineEmits } from 'vue';
-import MuiOverlay from '~/overlay/src/overlay.vue';
+import MuiOverlay from '../../overlay/src/overlay.vue';
 
 const emit = defineEmits<{
   (e: 'update:model-value', visible: boolean): void

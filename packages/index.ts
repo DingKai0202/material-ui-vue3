@@ -2,6 +2,7 @@ import { App } from 'vue'
 import MuiButton from './button'
 import MuiDialog from './dialog'
 import MuiIcon from './icon'
+import '../theme-chalk/src/index.scss'
  
 // 所有组件列表
 const components = [ MuiButton, MuiDialog, MuiIcon ]

@@ -13,11 +13,18 @@
     <p style="background: white">内容是付费电视</p>
     <span>弄啊萨芬</span>
   </mui-dialog>
-  <mui-icon color="red">Icon组件</mui-icon>
+  <mui-icon color="red">
+    <AddCircle />
+  </mui-icon>
+  <mui-icon color="red">
+    <AddCircle />
+  </mui-icon>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { AddCircle } from '@vicons/ionicons5'
+
 // name: 'App',
 let count = ref<number>(0)
 let textColor = ref<string>('red')
